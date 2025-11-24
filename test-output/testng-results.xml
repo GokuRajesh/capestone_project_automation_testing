@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="1" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-23T11:29:48 IST" name="Default suite" finished-at="2025-11-23T11:30:23 IST" duration-ms="34884">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner@74e52303]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-11-23T11:29:48 IST" name="Default test" finished-at="2025-11-23T11:30:23 IST" duration-ms="34884">
+      <class name="utilities.reportgenerator">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:utilities.reportgenerator@158da8e]" started-at="2025-11-23T11:29:48 IST" name="beforeSuite" finished-at="2025-11-23T11:29:48 IST" duration-ms="221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:utilities.reportgenerator@158da8e]" started-at="2025-11-23T11:30:23 IST" name="afterSuite" finished-at="2025-11-23T11:30:23 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- utilities.reportgenerator -->
+      <class name="testrunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:testrunner@74e52303]" started-at="2025-11-23T11:29:48 IST" name="setUpClass" finished-at="2025-11-23T11:29:48 IST" duration-ms="251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner@74e52303]" started-at="2025-11-23T11:29:48 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-23T11:29:57 IST" duration-ms="8432" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search valid product in all"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Search Product]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at org.testng.Assert.assertTrue(Assert.java:53)
+at stepdefinition.tc2_searchValidProducts.he_should_be_able_to_view_the_product(tc2_searchValidProducts.java:30)
+at ✽.he should be able to view the product "Perl and CGI for the World Wide Web"(file:///C:/Selenium%20demo/Capstone_project_maven/features/searchProduct.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner@74e52303]" started-at="2025-11-23T11:29:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-23T11:30:06 IST" duration-ms="8841" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search valid product in all"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Search Product]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at org.testng.Assert.assertTrue(Assert.java:53)
+at stepdefinition.tc2_searchValidProducts.he_should_be_able_to_view_the_product(tc2_searchValidProducts.java:30)
+at ✽.he should be able to view the product "Oracle8i Web Development"(file:///C:/Selenium%20demo/Capstone_project_maven/features/searchProduct.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner@74e52303]" started-at="2025-11-23T11:30:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-23T11:30:16 IST" duration-ms="9887" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search valid product in all"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Search Product]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at org.testng.Assert.assertTrue(Assert.java:53)
+at stepdefinition.tc2_searchValidProducts.he_should_be_able_to_view_the_product(tc2_searchValidProducts.java:30)
+at ✽.he should be able to view the product "Web Design in a Nutshell"(file:///C:/Selenium%20demo/Capstone_project_maven/features/searchProduct.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner@74e52303]" started-at="2025-11-23T11:30:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-23T11:30:23 IST" duration-ms="7429" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search in valid product in all"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Search Product]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunner@74e52303]" started-at="2025-11-23T11:30:23 IST" name="tearDownClass" finished-at="2025-11-23T11:30:23 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testrunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
