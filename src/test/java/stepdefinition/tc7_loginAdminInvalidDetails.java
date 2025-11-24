@@ -24,7 +24,7 @@ public class tc7_loginAdminInvalidDetails extends reportgenerator{
 	
 	@Then("he should not be navigated to admin menu page after using invalid details")
 	public void he_should_not_be_navigated_to_admin_menu_page_after_using_invalid_details() throws IOException {
-		logger=extent.startTest("admin login using invalid details test");
+		logger=extent.startTest("Admin login using invalid details test");
 		String currentUrl = hooks.driver.getCurrentUrl();
 		System.out.println(currentUrl);
 		if(currentUrl.contains("notLogged")){

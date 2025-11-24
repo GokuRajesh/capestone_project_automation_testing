@@ -21,7 +21,7 @@ public class tc2_searchValidProducts extends reportgenerator {
 	homePage home=new homePage(hooks.driver);
 	@When("he searches product in category all as {string}")
 	public void he_searches_product_in_category_all(String product) {
-		logger=extent.startTest("search valid products test");
+		logger=extent.startTest("Search valid products test");
 		home.search(product);
 		home.clickSearch();
 	    System.out.println("searches product in caregory all"+product);

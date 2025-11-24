@@ -20,7 +20,7 @@ public class tc6_loginAdminUppercasePassword extends reportgenerator {
 	
 	@When("enter login as {string} and uppercase password as {string}")
 	public void enter_login_as_and_uppercase_password_as(String login, String password) throws IOException {
-		logger=extent.startTest("admin login using valid password in uppercase test");
+		logger=extent.startTest("Admin login using valid password in uppercase test");
 		shot.takeScreenshot(filename);
 		admin.enterLogin(login);
 		shot.takeScreenshot(filename);

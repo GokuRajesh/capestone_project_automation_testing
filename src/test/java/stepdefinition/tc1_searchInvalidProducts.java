@@ -25,7 +25,7 @@ public class tc1_searchInvalidProducts extends reportgenerator{
 		
 		@When("he searches invalid product in category all as {string}")
 		public void he_searches_invalid_product_in_category_all(String product) {
-			logger=extent.startTest("search invalid products test");
+			logger=extent.startTest("Search invalid products test");
 			home.search(product);
 			home.clickSearch();
 			System.out.println("user searches invalid product in all");

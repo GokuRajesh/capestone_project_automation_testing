@@ -21,7 +21,7 @@ public class tc5_loginAdminValidDetails extends reportgenerator {
 	}
 	@When("enter login as {string} and password as {string}")
 	public void enter_login_as_and_password_as(String login, String password) {
-		logger=extent.startTest("admin login using valid details test");
+		logger=extent.startTest("Admin login using valid details test");
 		admin.enterLogin(login);
 		admin.enterPassword(password);
 		admin.clickLogin();

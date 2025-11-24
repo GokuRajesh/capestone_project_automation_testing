@@ -23,7 +23,7 @@ public class tc4_addingDuplicateObjects extends reportgenerator {
 	
 	@When("he adds the duplicate product in the product list as {string} ,{string} and {string}")
 	public void he_adds_the_new_product_in_the_product_list(String category,String name,String price) throws IOException {
-		logger=extent.startTest("add the duplicate products test");
+		logger=extent.startTest("Add duplicate products test");
 		shot.takeScreenshot(filename);
 		menu.navigateToProdcuts();
 		shot.takeScreenshot(filename);
