@@ -31,11 +31,11 @@ public class tc5_loginAdminValidDetails extends reportgenerator {
 	public void he_should_be_navigates_to_admin_menu_page() {
 		String currentUrl = hooks.driver.getCurrentUrl();
 		if(currentUrl.contains("AdmMenu")){
-			logger.log(LogStatus.PASS, "admin login using valid details pass");
+			logger.log(LogStatus.PASS, "Admin login using valid details pass");
 			assertTrue(true);
 		}
 		else {
-			logger.log(LogStatus.FAIL, "admin login using valid details failed");
+			logger.log(LogStatus.FAIL, "Admin login using valid details failed");
 			assertTrue(false);
 		}
 		extent.endTest(logger);

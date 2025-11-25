@@ -47,12 +47,12 @@ public class tc4_addingDuplicateObjects extends reportgenerator {
 		List<WebElement> links = hooks.driver.findElements(By.linkText(product));
 	    if(links.size()>1) {
 	    	shot.takeScreenshot(filename);
-	    	logger.log(LogStatus.FAIL, "add the duplicate product test failed");
+	    	logger.log(LogStatus.FAIL, "Add the duplicate product test failed");
 	    	assertTrue(false);
 	    }
 	    else {
 	    	shot.takeScreenshot(filename);
-	    	logger.log(LogStatus.PASS, "add the duplicate product test passed");
+	    	logger.log(LogStatus.PASS, "Add the duplicate product test passed");
 	    	assertTrue(true);
 	    }
 		extent.endTest(logger);

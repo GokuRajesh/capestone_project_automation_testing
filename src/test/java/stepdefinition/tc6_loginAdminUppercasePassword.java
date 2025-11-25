@@ -34,11 +34,11 @@ public class tc6_loginAdminUppercasePassword extends reportgenerator {
 		String currentUrl = hooks.driver.getCurrentUrl();
 		shot.takeScreenshot(filename);
 		if(currentUrl.contains("notLogged")){
-			logger.log(LogStatus.PASS, "admin login using valid password in uppercase pass");
+			logger.log(LogStatus.PASS, "Admin login using valid password in uppercase pass");
 			assertTrue(true);
 		}
 		else {
-			logger.log(LogStatus.FAIL, "admin login using valid password in uppercase failed");
+			logger.log(LogStatus.FAIL, "Admin login using valid password in uppercase failed");
 			assertTrue(false);
 		}
 		extent.endTest(logger);

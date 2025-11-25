@@ -35,11 +35,11 @@ public class tc1_searchInvalidProducts extends reportgenerator{
 		public void he_should_be_able_to_view_no_record_found() {
 			try {
 				hooks.driver.findElement(By.xpath("//*[contains(text(),'No records')]"));
-				logger.log(LogStatus.PASS, "search invalid product test passed");
+				logger.log(LogStatus.PASS, "Search invalid product test passed");
 				assertTrue(true);
 			}
 			catch(Exception e){
-				logger.log(LogStatus.FAIL, "search invalid product test fail");
+				logger.log(LogStatus.FAIL, "Search invalid product test fail");
 				assertTrue(false);
 			}
 			finally {

@@ -1,5 +1,6 @@
 package pageObjects;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -34,5 +35,13 @@ public class adminMenu {
 		Select selector=new Select(driver.findElement(By.name("product_category")));
 		selector.selectByContainsVisibleText(category);
 		driver.findElement(By.xpath("//input[@name='Search']")).click();
+	}
+	public void clickDelete() {
+		driver.findElement(By.name("Delete1")).click();
+	}
+	public void acceptAlert() {
+		// Handle alert
+        Alert alert = driver.switchTo().alert();
+        alert.accept(); // Press OK on the alert
 	}
 }

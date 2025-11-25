@@ -43,11 +43,11 @@ public class tc3_addingNewProducts extends reportgenerator {
 		menu.findProduct(name,category);
 		try {
 			hooks.driver.findElement(By.linkText(name));
-			logger.log(LogStatus.PASS, "add the product test passed");
+			logger.log(LogStatus.PASS, "Add the product test passed");
 			assertTrue(true);
 		}
 		catch(Exception e) {
-			logger.log(LogStatus.FAIL, "add the product test failed");
+			logger.log(LogStatus.FAIL, "Add the product test failed");
 			assertTrue(false);
 		}
 		finally {
