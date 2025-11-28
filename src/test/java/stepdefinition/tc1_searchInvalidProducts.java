@@ -11,6 +11,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.qameta.allure.Allure;
 import pageObjects.homePage;
 import utilities.reportgenerator;
 
@@ -37,10 +38,12 @@ public class tc1_searchInvalidProducts extends reportgenerator{
 				hooks.driver.findElement(By.xpath("//*[contains(text(),'No records')]"));
 				logger.log(LogStatus.PASS, "Search invalid product test passed");
 				assertTrue(true);
+				Allure.step("Search invalid product test passed");
 			}
 			catch(Exception e){
 				logger.log(LogStatus.FAIL, "Search invalid product test fail");
 				assertTrue(false);
+				Allure.addAttachment("Search invalid product test fail", e.getMessage());
 			}
 			finally {
 				extent.endTest(logger);
