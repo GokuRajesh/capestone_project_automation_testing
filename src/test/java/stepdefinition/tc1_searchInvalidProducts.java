@@ -38,12 +38,10 @@ public class tc1_searchInvalidProducts extends reportgenerator{
 				hooks.driver.findElement(By.xpath("//*[contains(text(),'No records')]"));
 				logger.log(LogStatus.PASS, "Search invalid product test passed");
 				assertTrue(true);
-				Allure.step("Search invalid product test passed");
 			}
 			catch(Exception e){
 				logger.log(LogStatus.FAIL, "Search invalid product test fail");
 				assertTrue(false);
-				Allure.addAttachment("Search invalid product test fail", e.getMessage());
 			}
 			finally {
 				extent.endTest(logger);

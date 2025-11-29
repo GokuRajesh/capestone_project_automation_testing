@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cucumber</title>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<style>
+.cucumber-react h1, .cucumber-react h2, .cucumber-react h3 {
+  padding: 0;
+  margin-top: 0.3em;
+  margin-bottom: 0;
+  display: inline-block;
+}
+.cucumber-react a {
+  color: inherit;
+}
+.cucumber-react ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+.cucumber-react section {
+  margin-bottom: 1em;
+}
+.cucumber-react .status-passed {
+  color: #2CB14A;
+}
+.cucumber-react .status-skipped {
+  color: #00A0CC;
+}
+.cucumber-react .status-pending {
+  color: #FFAD33;
+}
+.cucumber-react .status-undefined {
+  color: #FFAD33;
+}
+.cucumber-react .status-ambiguous {
+  color: #F4EBFD;
+}
+.cucumber-react .status-failed {
+  color: #BB0000;
+}
+.cucumber-react .status-unknown {
+  color: #B6BECB;
+}
+.cucumber-react .data-table {
+  border-collapse: collapse;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.cucumber-react .data-table th {
+  border: 1px solid #4B5662;
+  padding: 0.3em;
+}
+.cucumber-react .data-table td {
+  border: 1px solid #4B5662;
+  padding: 0.3em;
+}
+.cucumber-react .data-table td__status {
+  padding: 0.5em 3px 3px 3px;
+}
+.cucumber-react .data-table td__step {
+  flex-grow: 1;
+}
+.cucumber-react .examples-table {
+  border-collapse: collapse;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.cucumber-react .examples-table th {
+  padding: 0.3em;
+}
+.cucumber-react .examples-table th + th {
+  border: 1px solid #4B5662;
+}
+.cucumber-react .examples-table td {
+  padding: 0.3em;
+}
+.cucumber-react .examples-table td + td {
+  border: 1px solid #4B5662;
+}
+.cucumber-react .examples-table td + td__status {
+  padding: 0.5em 3px 3px 3px;
+}
+.cucumber-react .examples-table td + td__step {
+  flex-grow: 1;
+}
+.cucumber-react .gherkin-document-list {
+  font: 14px "Open Sans", sans-serif;
+  color: #161C24;
+  background: #fff;
+  overflow-x: hidden;
+}
+.cucumber-react .indent {
+  margin-left: 1em;
+}
+.cucumber-react .keyword {
+  font-weight: bold;
+}
+.cucumber-react .step {
+  padding: 0.1em;
+}
+.cucumber-react .step-text {
+  font-weight: normal;
+}
+.cucumber-react .step-param {
+  font-weight: normal;
+}
+.cucumber-react .step-container {
+  display: flex;
+}
+.cucumber-react .step-container__step {
+  flex-grow: 1;
+}
+.cucumber-react .text_status_icon_container {
+  padding-top: 0.35em;
+  padding-right: 0.5em;
+}
+.cucumber-react .error-message {
+  padding: 0.5em;
+  margin: 0;
+  overflow: scroll;
+}
+.cucumber-react .tag-list {
+  padding: 0;
+  margin-bottom: 0;
+}
+.cucumber-react .tag {
+  display: inline;
+  list-style-type: none;
+  padding: 4px 8px 4px 8px;
+  margin-right: 6px;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+}
+.cucumber-react .attachment {
+  background-color: #ebebeb;
+  padding: 0.5em;
+}
+.cucumber-react .attachment .attachment-icon {
+  margin-right: 0.5em;
+}
+.cucumber-react .attachment-image {
+  margin-top: 1em;
+}
+.accordion {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+
+.accordion__item + .accordion__item {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.accordion__button {
+    background-color: #f4f4f4;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+}
+
+.accordion__button:hover {
+    background-color: #ddd;
+}
+
+.accordion__button:before {
+    display: inline-block;
+    content: '';
+    height: 10px;
+    width: 10px;
+    margin-right: 12px;
+    border-bottom: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: rotate(-45deg);
+}
+
+.accordion__button[aria-expanded='true']::before,
+.accordion__button[aria-selected='true']::before {
+    transform: rotate(45deg);
+}
+
+.accordion__panel {
+    padding: 20px;
+    animation: fadein 0.35s ease-in;
+}
+
+	</style>
+</head>
+<body>
+<div id="content">
+</div>
+<script>
+window.CUCUMBER_MESSAGES = [{"meta":{"protocolVersion":"12.1.1","implementation":{"name":"cucumber-jvm","version":"6.1.1"},"runtime":{"name":"Eclipse Adoptium","version":"21.0.8"},"os":{"name":"Windows 10"},"cpu":{"name":"amd64"}}},{"testRunStarted":{"timestamp":{"seconds":"1764417548","nanos":14381400}}},{"source":{"uri":"file:///C:/Selenium%20demo/Capstone_project_maven/features/addingProducts.feature","data":"@addingproducts\r\n\r\nFeature: Adding products in admin page\r\n\r\nScenario: adding a new product to the product list\r\n\r\nGiven user is in the Admin page, enter login as \"\u003clogin\u003e\" and password as \"\u003cpassword\u003e\"\r\nWhen he adds the product in the product list as \"\u003ccategory\u003e\" ,\"\u003cproductname\u003e\" and \"\u003cprice\u003e\"\r\nThen the new product is added to the product list as \"\u003cproductname\u003e\",\"\u003ccategory\u003e\"\r\n\r\nExamples:\r\n|\tlogin\t|\tpassword\t|\tcategory\t|\tproductname\t\t|\tprice\t|\r\n|\tadmin\t|\tadmin\t\t|\tProgramming\t|\tbook of java\t|\t30\t\t|\r\n\r\nScenario: adding a duplicate product to the product list\r\n\r\nGiven user is in the Admin page, enter login as \"\u003clogin\u003e\" and password as \"\u003cpassword\u003e\"\r\nWhen he adds the duplicate product in the product list as \"\u003ccategory\u003e\" ,\"\u003cproductname\u003e\" and \"\u003cprice\u003e\"\r\nThen the \"\u003cproductname\u003e\" is not added from \"\u003ccategory\u003e\"\r\n\r\nExamples:\r\n|\tlogin\t|\tpassword\t|\tcategory\t|\tproductname\t\t|\tprice\t|\r\n|\tadmin\t|\tadmin\t\t|\tProgramming\t|\tbook of java\t|\t30\t\t|\r\n\t","mediaType":"text/x.cucumber.gherkin+plain"}},{"gherkinDocument":{"uri":"file:///C:/Selenium%20demo/Capstone_project_maven/features/addingProducts.feature","feature":{"location":{"line":3,"column":1},"tags":[{"location":{"line":1,"column":1},"name":"@addingproducts","id":"f9804171-e560-4a74-b126-43891d242fca"}],"language":"en","keyword":"Feature","name":"Adding products in admin page","children":[{"scenario":{"location":{"line":5,"column":1},"keyword":"Scenario","name":"adding a new product to the product list","steps":[{"location":{"line":7,"column":1},"keyword":"Given ","text":"user is in the Admin page, enter login as \"\u003clogin\u003e\" and password as \"\u003cpassword\u003e\"","id":"c1d347c0-bf97-4a8c-bb05-a724798dc3a4"},{"location":{"line":8,"column":1},"keyword":"When ","text":"he adds the product in the product list as \"\u003ccategory\u003e\" ,\"\u003cproductname\u003e\" and \"\u003cprice\u003e\"","id":"c5482659-b444-4c10-a3f5-d59cc12a641d"},{"location":{"line":9,"column":1},"keyword":"Then ","text":"the new product is added to the product list as \"\u003cproductname\u003e\",\"\u003ccategory\u003e\"","id":"675e26c0-6f49-4625-9531-0452107c5ef3"}],"examples":[{"location":{"line":11,"column":1},"keyword":"Examples","tableHeader":{"location":{"line":12,"column":1},"cells":[{"location":{"line":12,"column":3},"value":"login"},{"location":{"line":12,"column":11},"value":"password"},{"location":{"line":12,"column":22},"value":"category"},{"location":{"line":12,"column":33},"value":"productname"},{"location":{"line":12,"column":48},"value":"price"}],"id":"8d7256f7-6c6f-4de1-a85c-e31757f8c97b"},"tableBody":[{"location":{"line":13,"column":1},"cells":[{"location":{"line":13,"column":3},"value":"admin"},{"location":{"line":13,"column":11},"value":"admin"},{"location":{"line":13,"column":20},"value":"Programming"},{"location":{"line":13,"column":34},"value":"book of java"},{"location":{"line":13,"column":49},"value":"30"}],"id":"69650383-51c8-4034-8d0f-0beaa49cb402"}],"id":"b350df5a-e7c4-4a89-ac8e-29b652ffca2f"}],"id":"ff60eddd-3cae-4544-8170-51f42d428a7e"}},{"scenario":{"location":{"line":15,"column":1},"keyword":"Scenario","name":"adding a duplicate product to the product list","steps":[{"location":{"line":17,"column":1},"keyword":"Given ","text":"user is in the Admin page, enter login as \"\u003clogin\u003e\" and password as \"\u003cpassword\u003e\"","id":"2f466943-d8e1-4d7f-a69b-073ada95d089"},{"location":{"line":18,"column":1},"keyword":"When ","text":"he adds the duplicate product in the product list as \"\u003ccategory\u003e\" ,\"\u003cproductname\u003e\" and \"\u003cprice\u003e\"","id":"f255a8fd-b73e-4918-9d9e-a2ad855ee133"},{"location":{"line":19,"column":1},"keyword":"Then ","text":"the \"\u003cproductname\u003e\" is not added from \"\u003ccategory\u003e\"","id":"650e885d-af9d-4369-a40f-6924ee5ec773"}],"examples":[{"location":{"line":21,"column":1},"keyword":"Examples","tableHeader":{"location":{"line":22,"column":1},"cells":[{"location":{"line":22,"column":3},"value":"login"},{"location":{"line":22,"column":11},"value":"password"},{"location":{"line":22,"column":22},"value":"category"},{"location":{"line":22,"column":33},"value":"productname"},{"location":{"line":22,"column":48},"value":"price"}],"id":"beadad57-8e0a-4c91-bdc7-81cf4d97511d"},"tableBody":[{"location":{"line":23,"column":1},"cells":[{"location":{"line":23,"column":3},"value":"admin"},{"location":{"line":23,"column":11},"value":"admin"},{"location":{"line":23,"column":20},"value":"Programming"},{"location":{"line":23,"column":34},"value":"book of java"},{"location":{"line":23,"column":49},"value":"30"}],"id":"ef49a761-32bd-4c29-8b7c-d14dbc30d849"}],"id":"5cf879a3-4eaa-4164-a31a-61602ae56b3f"}],"id":"fb1e0279-f23b-4200-87d9-052814b063bf"}}]}}},{"pickle":{"id":"c483f300-50d6-44d0-a6d2-8d2fcc0b30f1","uri":"file:///C:/Selenium%20demo/Capstone_project_maven/features/addingProducts.feature","name":"adding a new product to the product list","language":"en","steps":[{"text":"user is in the Admin page, enter login as \"admin\" and password as \"admin\"","id":"0b52b0a0-02da-4a71-8a80-1d9b76ec1c8e","astNodeIds":["c1d347c0-bf97-4a8c-bb05-a724798dc3a4","69650383-51c8-4034-8d0f-0beaa49cb402"]},{"text":"he adds the product in the product list as \"Programming\" ,\"book of java\" and \"30\"","id":"0ce5a0fc-1e55-4aa7-8eb2-bbcef97e6a7b","astNodeIds":["c5482659-b444-4c10-a3f5-d59cc12a641d","69650383-51c8-4034-8d0f-0beaa49cb402"]},{"text":"the new product is added to the product list as \"book of java\",\"Programming\"","id":"ff69210f-72b0-45fa-92f4-5fcf2b010c22","astNodeIds":["675e26c0-6f49-4625-9531-0452107c5ef3","69650383-51c8-4034-8d0f-0beaa49cb402"]}],"tags":[{"name":"@addingproducts","astNodeId":"f9804171-e560-4a74-b126-43891d242fca"}],"astNodeIds":["ff60eddd-3cae-4544-8170-51f42d428a7e","69650383-51c8-4034-8d0f-0beaa49cb402"]}},{"pickle":{"id":"ab14e16c-ece5-430f-b8ba-3c8c26b988eb","uri":"file:///C:/Selenium%20demo/Capstone_project_maven/features/addingProducts.feature","name":"adding a duplicate product to the product list","language":"en","steps":[{"text":"user is in the Admin page, enter login as \"admin\" and password as \"admin\"","id":"eadcfdbf-f5c0-4437-8e73-69ef0c725b2d","astNodeIds":["2f466943-d8e1-4d7f-a69b-073ada95d089","ef49a761-32bd-4c29-8b7c-d14dbc30d849"]},{"text":"he adds the duplicate product in the product list as \"Programming\" ,\"book of java\" and \"30\"","id":"34e116be-82c8-4dd9-bd2a-e2fbe3d8f5c0","astNodeIds":["f255a8fd-b73e-4918-9d9e-a2ad855ee133","ef49a761-32bd-4c29-8b7c-d14dbc30d849"]},{"text":"the \"book of java\" is not added from \"Programming\"","id":"b8cb6dcd-4538-424a-a713-960523c0d843","astNodeIds":["650e885d-af9d-4369-a40f-6924ee5ec773","ef49a761-32bd-4c29-8b7c-d14dbc30d849"]}],"tags":[{"name":"@addingproducts","astNodeId":"f9804171-e560-4a74-b126-43891d242fca"}],"astNodeIds":["fb1e0279-f23b-4200-87d9-052814b063bf","ef49a761-32bd-4c29-8b7c-d14dbc30d849"]}},{"source":{"uri":"file:///C:/Selenium%20demo/Capstone_project_maven/features/adminlogin.feature","data":"@adminlogin\r\n\r\nFeature: admin log in\r\n\r\nScenario: login using valid details\r\n\r\nGiven user is in the Admin page\r\nWhen enter login as \"\u003clogin\u003e\" and password as \"\u003cpassword\u003e\"\r\nThen he should be navigates to admin menu page\r\n\r\nExamples:\r\n|\tlogin\t|\tpassword\t|\r\n|\tadmin\t|\tadmin\t\t|\r\n\r\nScenario: login using valid password in upercase\r\n\r\nGiven user is in the Admin page\r\nWhen enter login as \"\u003clogin\u003e\" and uppercase password as \"\u003cpassword\u003e\"\r\nThen he should not be navigated to admin menu page\r\n\r\nExamples:\r\n|\tlogin\t|\tpassword\t|\r\n|\tadmin\t|\tADMIN\t\t|\r\n\r\nScenario: login using invalid details\r\n\r\nGiven user is in the Admin page\r\nWhen enter invalid login as \"\u003clogin\u003e\" and invalid password as \"\u003cpassword\u003e\"\r\nThen he should not be navigated to admin menu page after using invalid details\r\n\r\nExamples:\r\n\r\n|\tlogin\t|\tpassword\t|\r\n|\tewkfbew\t|\tewkbjf\t\t|\r\n","mediaType":"text/x.cucumber.gherkin+plain"}},{"gherkinDocument":{"uri":"file:///C:/Selenium%20demo/Capstone_project_maven/features/adminlogin.feature","feature":{"location":{"line":3,"column":1},"tags":[{"location":{"line":1,"column":1},"name":"@adminlogin","id":"8d5946bc-f8c3-494e-a758-d249d55ff596"}],"language":"en","keyword":"Feature","name":"admin log in","children":[{"scenario":{"location":{"line":5,"column":1},"keyword":"Scenario","name":"login using valid details","steps":[{"location":{"line":7,"column":1},"keyword":"Given ","text":"user is in the Admin page","id":"69d960d9-ae43-4660-a467-c7a5bd6132c9"},{"location":{"line":8,"column":1},"keyword":"When ","text":"enter login as \"\u003clogin\u003e\" and password as \"\u003cpassword\u003e\"","id":"7c389b7f-4ba8-4315-ae67-571433b0d43c"},{"location":{"line":9,"column":1},"keyword":"Then ","text":"he should be navigates to admin menu page","id":"a6b74d96-50f7-4719-8b7f-0ef679ad1e3d"}],"examples":[{"location":{"line":11,"column":1},"keyword":"Examples","tableHeader":{"location":{"line":12,"column":1},"cells":[{"location":{"line":12,"column":3},"value":"login"},{"location":{"line":12,"column":11},"value":"password"}],"id":"b4b9b41c-62dd-430d-baaa-9b1c51c692e5"},"tableBody":[{"location":{"line":13,"column":1},"cells":[{"location":{"line":13,"column":3},"value":"admin"},{"location":{"line":13,"column":11},"value":"admin"}],"id":"cecea35a-ad61-4884-9031-1f824e60c621"}],"id":"855633b7-8f18-4d8c-b72b-ecb74c93c521"}],"id":"8242352b-33c8-49ac-95de-fb4666b87c18"}},{"scenario":{"location":{"line":15,"column":1},"keyword":"Scenario","name":"login using valid password in upercase","steps":[{"location":{"line":17,"column":1},"keyword":"Given ","text":"user is in the Admin page","id":"e91dd61d-4650-4040-a7ab-95be73be4774"},{"location":{"line":18,"column":1},"keyword":"When ","text":"enter login as \"\u003clogin\u003e\" and uppercase password as \"\u003cpassword\u003e\"","id":"ae07517b-9eae-458b-bb93-c0bc78939e87"},{"location":{"line":19,"column":1},"keyword":"Then ","text":"he should not be navigated to admin menu page","id":"c9a5c3c9-e06b-452c-b126-0fdb599fc82c"}],"examples":[{"location":{"line":21,"column":1},"keyword":"Examples","tableHeader":{"location":{"line":22,"column":1},"cells":[{"location":{"line":22,"column":3},"value":"login"},{"location":{"line":22,"column":11},"value":"password"}],"id":"e930f6c6-6593-4a02-84d1-e10ae781a97a"},"tableBody":[{"location":{"line":23,"column":1},"cells":[{"location":{"line":23,"column":3},"value":"admin"},{"location":{"line":23,"column":11},"value":"ADMIN"}],"id":"c22a7a0f-bb30-4813-8500-acaee8e83987"}],"id":"f32fca66-4127-4908-a68e-a07fcd5ef1dd"}],"id":"dac3be81-11a4-4d8a-9a87-3cb66a686d08"}},{"scenario":{"location":{"line":25,"column":1},"keyword":"Scenario","name":"login using invalid details","steps":[{"location":{"line":27,"column":1},"keyword":"Given ","text":"user is in the Admin page","id":"3aa530c6-e577-4a4e-a5c4-a50792bb2c91"},{"location":{"line":28,"column":1},"keyword":"When ","text":"enter invalid login as \"\u003clogin\u003e\" and invalid password as \"\u003cpassword\u003e\"","id":"5928a73b-1096-4fcd-a4b9-c0ba977e2df6"},{"location":{"line":29,"column":1},"keyword":"Then ","text":"he should not be navigated to admin menu page after using invalid details","id":"b3c908b9-bf58-434b-a824-829951505967"}],"examples":[{"location":{"line":31,"column":1},"keyword":"Examples","tableHeader":{"location":{"line":33,"column":1},"cells":[{"location":{"line":33,"column":3},"value":"login"},{"location":{"line":33,"column":11},"value":"password"}],"id":"3fa7339f-4d27-45c5-8619-550ef413637c"},"tableBody":[{"location":{"line":34,"column":1},"cells":[{"location":{"line":34,"column":3},"value":"ewkfbew"},{"location":{"line":34,"column":13},"value":"ewkbjf"}],"id":"b3b06c33-1743-41c3-af94-193c0d82ac73"}],"id":"15885820-4221-434b-aedf-853abe12acf5"}],"id":"c0874a74-72e0-4860-976d-805d15ce8970"}}]}}},{"pickle":{"id":"7d3aa4d5-ae44-42b0-889c-248c81564cbc","uri":"file:///C:/Selenium%20demo/Capstone_project_maven/features/adminlogin.feature","name":"login using valid details","language":"en","steps":[{"text":"user is in the Admin page","id":"f18864d5-2dc6-4b52-87ee-a70bf1f03e4e","astNodeIds":["69d960d9-ae43-4660-a467-c7a5bd6132c9","cecea35a-ad61-4884-9031-1f824e60c621"]},{"text":"enter login as \"admin\" and password as \"admin\"","id":"09634e3a-92ce-4035-ae47-1cbe6488bbb2","astNodeIds":["7c389b7f-4ba8-4315-ae67-571433b0d43c","cecea35a-ad61-4884-9031-1f824e60c621"]},{"text":"he should be navigates to admin menu page","id":"d28b45b6-1533-4249-b04c-d4780aaf2a47","astNodeIds":["a6b74d96-50f7-4719-8b7f-0ef679ad1e3d","cecea35a-ad61-4884-9031-1f824e60c621"]}],"tags":[{"name":"@adminlogin","astNodeId":"8d5946bc-f8c3-494e-a758-d249d55ff596"}],"astNodeIds":["8242352b-33c8-49ac-95de-fb4666b87c18","cecea35a-ad61-4884-9031-1f824e60c621"]}},{"pickle":{"id":"ffc928b1-6961-4256-8caa-f44787a5cf8c","uri":"file:///C:/Selenium%20demo/Capstone_project_maven/features/adminlogin.feature","name":"login using valid password in upercase","language":"en","steps":[{"text":"user is in the Admin page","id":"62eb65af-2806-4b8a-9191-0c866bf15738","astNodeIds":["e91dd61d-4650-4040-a7ab-95be73be4774","c22a7a0f-bb30-4813-8500-acaee8e83987"]},{"text":"enter login as \"admin\" and uppercase password as \"ADMIN\"","id":"218fc11c-4c12-4bed-bee0-5c4e3a4d65a0","astNodeIds":["ae07517b-9eae-458b-bb93-c0bc78939e87","c22a7a0f-bb30-4813-8500-acaee8e83987"]},{"text":"he should not be navigated to admin menu page","id":"407687c2-1af0-43db-be70-f9a96cc8142b","astNodeIds":["c9a5c3c9-e06b-452c-b126-0fdb599fc82c","c22a7a0f-bb30-4813-8500-acaee8e83987"]}],"tags":[{"name":"@adminlogin","astNodeId":"8d5946bc-f8c3-494e-a758-d249d55ff596"}],"astNodeIds":["dac3be81-11a4-4d8a-9a87-3cb66a686d08","c22a7a0f-bb30-4813-8500-acaee8e83987"]}},{"pickle":{"id":"14f9357a-d0cd-444d-a2d9-89a3dfaf0197","uri":"file:///C:/Selenium%20demo/Capstone_project_maven/features/adminlogin.feature","name":"login using invalid details","language":"en","steps":[{"text":"user is in the Admin page","id":"fc975258-4794-476c-9fcc-b5daed7be8cc","astNodeIds":["3aa530c6-e577-4a4e-a5c4-a50792bb2c91","b3b06c33-1743-41c3-af94-193c0d82ac73"]},{"text":"enter invalid login as \"ewkfbew\" and invalid password as \"ewkbjf\"","id":"70bbd3eb-c856-4c3b-ab23-1ec008dc8c8c","astNodeIds":["5928a73b-1096-4fcd-a4b9-c0ba977e2df6","b3b06c33-1743-41c3-af94-193c0d82ac73"]},{"text":"he should not be navigated to admin menu page after using invalid details","id":"67b42ecf-19fc-420b-bada-e5dc2e7d11fd","astNodeIds":["b3c908b9-bf58-434b-a824-829951505967","b3b06c33-1743-41c3-af94-193c0d82ac73"]}],"tags":[{"name":"@adminlogin","astNodeId":"8d5946bc-f8c3-494e-a758-d249d55ff596"}],"astNodeIds":["c0874a74-72e0-4860-976d-805d15ce8970","b3b06c33-1743-41c3-af94-193c0d82ac73"]}},{"source":{"uri":"file:///C:/Selenium%20demo/Capstone_project_maven/features/deleteProducts.feature","data":"@delete\r\n\r\nFeature: deleting products in admin page\r\n\r\nScenario: delete a product to the product list\r\n\r\nGiven user is in the Admin page, enter login as \"\u003clogin\u003e\" and password as \"\u003cpassword\u003e\"\r\nWhen he deletes the \"\u003cproductname\u003e\",\"\u003ccategory\u003e\"\r\nThen the product is deleted\r\n\r\nExamples:\r\n|\tlogin\t|\tpassword\t|\tproductname\t\t\t|\tcategory\t|\r\n|\tadmin\t|\tadmin\t\t|\tbook of java\t\t|\tProgramming\t|\r\n|\tadmin\t|\tadmin\t\t|\tbook of java\t\t|\tProgramming\t|","mediaType":"text/x.cucumber.gherkin+plain"}},{"gherkinDocument":{"uri":"file:///C:/Selenium%20demo/Capstone_project_maven/features/deleteProducts.feature","feature":{"location":{"line":3,"column":1},"tags":[{"location":{"line":1,"column":1},"name":"@delete","id":"cfcadd35-7b3f-45e5-8215-d390b11ed481"}],"language":"en","keyword":"Feature","name":"deleting products in admin page","children":[{"scenario":{"location":{"line":5,"column":1},"keyword":"Scenario","name":"delete a product to the product list","steps":[{"location":{"line":7,"column":1},"keyword":"Given ","text":"user is in the Admin page, enter login as \"\u003clogin\u003e\" and password as \"\u003cpassword\u003e\"","id":"0b4763f4-cc62-440b-a18d-de3527dee77c"},{"location":{"line":8,"column":1},"keyword":"When ","text":"he deletes the \"\u003cproductname\u003e\",\"\u003ccategory\u003e\"","id":"15241330-8db2-49dc-933d-3b84951a4274"},{"location":{"line":9,"column":1},"keyword":"Then ","text":"the product is deleted","id":"901fefb1-9ceb-4d0c-9a39-63a322ab2bd2"}],"examples":[{"location":{"line":11,"column":1},"keyword":"Examples","tableHeader":{"location":{"line":12,"column":1},"cells":[{"location":{"line":12,"column":3},"value":"login"},{"location":{"line":12,"column":11},"value":"password"},{"location":{"line":12,"column":22},"value":"productname"},{"location":{"line":12,"column":38},"value":"category"}],"id":"597650cd-39f6-4da3-80f5-503e54ba04a7"},"tableBody":[{"location":{"line":13,"column":1},"cells":[{"location":{"line":13,"column":3},"value":"admin"},{"location":{"line":13,"column":11},"value":"admin"},{"location":{"line":13,"column":20},"value":"book of java"},{"location":{"line":13,"column":36},"value":"Programming"}],"id":"07e17c7c-a266-4924-b8cf-2a62d5d0557a"},{"location":{"line":14,"column":1},"cells":[{"location":{"line":14,"column":3},"value":"admin"},{"location":{"line":14,"column":11},"value":"admin"},{"location":{"line":14,"column":20},"value":"book of java"},{"location":{"line":14,"column":36},"value":"Programming"}],"id":"144392df-b223-4ce1-b28c-aaf8d59dab3c"}],"id":"9d750f48-7592-4824-9a4b-9e54fa6a2c6e"}],"id":"a0b72754-e49b-4bf8-a592-22a7e5b29b59"}}]}}},{"pickle":{"id":"c417cdc6-bbcc-4359-9d44-f20e69f26d46","uri":"file:///C:/Selenium%20demo/Capstone_project_maven/features/deleteProducts.feature","name":"delete a product to the product list","language":"en","steps":[{"text":"user is in the Admin page, enter login as \"admin\" and password as \"admin\"","id":"6dc346f0-8170-49fc-88fe-cd08b61e7485","astNodeIds":["0b4763f4-cc62-440b-a18d-de3527dee77c","07e17c7c-a266-4924-b8cf-2a62d5d0557a"]},{"text":"he deletes the \"book of java\",\"Programming\"","id":"0593a6f9-5884-4101-856d-e9ac2f2aee4d","astNodeIds":["15241330-8db2-49dc-933d-3b84951a4274","07e17c7c-a266-4924-b8cf-2a62d5d0557a"]},{"text":"the product is deleted","id":"4c7c9a3c-6f28-4fd0-8d65-3f0b5a8e4c2f","astNodeIds":["901fefb1-9ceb-4d0c-9a39-63a322ab2bd2","07e17c7c-a266-4924-b8cf-2a62d5d0557a"]}],"tags":[{"name":"@delete","astNodeId":"cfcadd35-7b3f-45e5-8215-d390b11ed481"}],"astNodeIds":["a0b72754-e49b-4bf8-a592-22a7e5b29b59","07e17c7c-a266-4924-b8cf-2a62d5d0557a"]}},{"pickle":{"id":"151eed3a-b10a-40b3-a408-f810a3238154","uri":"file:///C:/Selenium%20demo/Capstone_project_maven/features/deleteProducts.feature","name":"delete a product to the product list","language":"en","steps":[{"text":"user is in the Admin page, enter login as \"admin\" and password as \"admin\"","id":"de2f15d4-b4ed-4f37-a83e-0aaa8fc267fe","astNodeIds":["0b4763f4-cc62-440b-a18d-de3527dee77c","144392df-b223-4ce1-b28c-aaf8d59dab3c"]},{"text":"he deletes the \"book of java\",\"Programming\"","id":"1aea3004-825d-4c55-889a-884b9f60a081","astNodeIds":["15241330-8db2-49dc-933d-3b84951a4274","144392df-b223-4ce1-b28c-aaf8d59dab3c"]},{"text":"the product is deleted","id":"abea014b-d53a-4787-84e0-cb07cd054ab2","astNodeIds":["901fefb1-9ceb-4d0c-9a39-63a322ab2bd2","144392df-b223-4ce1-b28c-aaf8d59dab3c"]}],"tags":[{"name":"@delete","astNodeId":"cfcadd35-7b3f-45e5-8215-d390b11ed481"}],"astNodeIds":["a0b72754-e49b-4bf8-a592-22a7e5b29b59","144392df-b223-4ce1-b28c-aaf8d59dab3c"]}},{"source":{"uri":"file:///C:/Selenium%20demo/Capstone_project_maven/features/searchProduct.feature","data":"@searchproduct\r\n\r\nFeature: Search Product \r\n\r\nScenario: Search valid product in all\r\n\r\nGiven the user in the Home page\r\nWhen he searches product in category all as \"\u003cvalidproduct\u003e\"\r\nThen he should be able to view the product \"\u003cvalidproduct\u003e\"\r\n\r\nExamples:\r\n|\tvalidproduct\t\t\t\t\t\t|\r\n|\tPerl and CGI for the World Wide Web\t|\r\n|\tOracle8i Web Development\t\t\t|\r\n|\tWeb Design in a Nutshell\t\t\t|\r\n\r\nScenario: Search in valid product in all\r\n\r\nGiven the user in the Home page\r\nWhen he searches invalid product in category all as \"\u003cinvalidproduct\u003e\"\r\nThen he should be able to view no record found \r\n\r\nExamples:\r\n|\tinvalidproduct\t\t\t\t\t\t|\r\n|\twkefbiwejbfiw\t\t\t\t\t\t|\r\n\r\n","mediaType":"text/x.cucumber.gherkin+plain"}},{"gherkinDocument":{"uri":"file:///C:/Selenium%20demo/Capstone_project_maven/features/searchProduct.feature","feature":{"location":{"line":3,"column":1},"tags":[{"location":{"line":1,"column":1},"name":"@searchproduct","id":"6d077e9a-fc17-43a3-93fb-65e8bfe6d67a"}],"language":"en","keyword":"Feature","name":"Search Product","children":[{"scenario":{"location":{"line":5,"column":1},"keyword":"Scenario","name":"Search valid product in all","steps":[{"location":{"line":7,"column":1},"keyword":"Given ","text":"the user in the Home page","id":"d3249dc5-1a00-48e4-b727-87c8e34402a8"},{"location":{"line":8,"column":1},"keyword":"When ","text":"he searches product in category all as \"\u003cvalidproduct\u003e\"","id":"facb4b0b-0e69-4ebb-abb6-4588e025c61a"},{"location":{"line":9,"column":1},"keyword":"Then ","text":"he should be able to view the product \"\u003cvalidproduct\u003e\"","id":"01ec27b8-734c-47dd-83a8-95a9feacba36"}],"examples":[{"location":{"line":11,"column":1},"keyword":"Examples","tableHeader":{"location":{"line":12,"column":1},"cells":[{"location":{"line":12,"column":3},"value":"validproduct"}],"id":"51d2d62f-371f-4842-b93b-95528ca283fe"},"tableBody":[{"location":{"line":13,"column":1},"cells":[{"location":{"line":13,"column":3},"value":"Perl and CGI for the World Wide Web"}],"id":"4bc973bd-73f7-47a1-8ada-e3cd3190be1c"},{"location":{"line":14,"column":1},"cells":[{"location":{"line":14,"column":3},"value":"Oracle8i Web Development"}],"id":"0c8c8a82-8050-4f1a-a7dd-b63f63d452e9"},{"location":{"line":15,"column":1},"cells":[{"location":{"line":15,"column":3},"value":"Web Design in a Nutshell"}],"id":"bbfe79a9-2b60-4093-b72a-1609f5a33ea2"}],"id":"8856a6e7-b988-4bb0-9fa7-3d22e55c1c82"}],"id":"c99656b2-37f6-4dee-a57d-c521d0821b6c"}},{"scenario":{"location":{"line":17,"column":1},"keyword":"Scenario","name":"Search in valid product in all","steps":[{"location":{"line":19,"column":1},"keyword":"Given ","text":"the user in the Home page","id":"072d9a57-6914-4284-ae5e-16436685430e"},{"location":{"line":20,"column":1},"keyword":"When ","text":"he searches invalid product in category all as \"\u003cinvalidproduct\u003e\"","id":"af79ed5c-58d0-4491-a41c-0b90f9d8b2ab"},{"location":{"line":21,"column":1},"keyword":"Then ","text":"he should be able to view no record found","id":"8e537d87-5ad3-46ac-96d3-3a27d23e0242"}],"examples":[{"location":{"line":23,"column":1},"keyword":"Examples","tableHeader":{"location":{"line":24,"column":1},"cells":[{"location":{"line":24,"column":3},"value":"invalidproduct"}],"id":"6cebf14d-db22-4a71-9c10-a03598c270b7"},"tableBody":[{"location":{"line":25,"column":1},"cells":[{"location":{"line":25,"column":3},"value":"wkefbiwejbfiw"}],"id":"e02433d7-53c5-452e-aa4d-075f99c7d5c3"}],"id":"64bfb103-e2e6-4fa6-b4ad-030830a902c9"}],"id":"624ab915-570a-45eb-9905-124ed525529f"}}]}}},{"pickle":{"id":"2e1812e4-2f2d-49d9-a16a-7d88e30d8431","uri":"file:///C:/Selenium%20demo/Capstone_project_maven/features/searchProduct.feature","name":"Search valid product in all","language":"en","steps":[{"text":"the user in the Home page","id":"c364f41e-3dff-4e79-ae67-41daa734b1f2","astNodeIds":["d3249dc5-1a00-48e4-b727-87c8e34402a8","4bc973bd-73f7-47a1-8ada-e3cd3190be1c"]},{"text":"he searches product in category all as \"Perl and CGI for the World Wide Web\"","id":"43b69809-6cc7-43fd-8097-c97f0f055f2d","astNodeIds":["facb4b0b-0e69-4ebb-abb6-4588e025c61a","4bc973bd-73f7-47a1-8ada-e3cd3190be1c"]},{"text":"he should be able to view the product \"Perl and CGI for the World Wide Web\"","id":"a16c1d97-7660-4793-a204-a519d22df8e4","astNodeIds":["01ec27b8-734c-47dd-83a8-95a9feacba36","4bc973bd-73f7-47a1-8ada-e3cd3190be1c"]}],"tags":[{"name":"@searchproduct","astNodeId":"6d077e9a-fc17-43a3-93fb-65e8bfe6d67a"}],"astNodeIds":["c99656b2-37f6-4dee-a57d-c521d0821b6c","4bc973bd-73f7-47a1-8ada-e3cd3190be1c"]}},{"pickle":{"id":"93f6cb2d-bae7-484d-a58a-3e1641256f82","uri":"file:///C:/Selenium%20demo/Capstone_project_maven/features/searchProduct.feature","name":"Search valid product in all","language":"en","steps":[{"text":"the user in the Home page","id":"b8700ab4-4a73-4275-bb4b-bdbcbdac3e59","astNodeIds":["d3249dc5-1a00-48e4-b727-87c8e34402a8","0c8c8a82-8050-4f1a-a7dd-b63f63d452e9"]},{"text":"he searches product in category all as \"Oracle8i Web Development\"","id":"13e39805-6a1c-41c8-978e-fdb6a83bffda","astNodeIds":["facb4b0b-0e69-4ebb-abb6-4588e025c61a","0c8c8a82-8050-4f1a-a7dd-b63f63d452e9"]},{"text":"he should be able to view the product \"Oracle8i Web Development\"","id":"29504363-02ce-4897-8f4f-fba468a8c49c","astNodeIds":["01ec27b8-734c-47dd-83a8-95a9feacba36","0c8c8a82-8050-4f1a-a7dd-b63f63d452e9"]}],"tags":[{"name":"@searchproduct","astNodeId":"6d077e9a-fc17-43a3-93fb-65e8bfe6d67a"}],"astNodeIds":["c99656b2-37f6-4dee-a57d-c521d0821b6c","0c8c8a82-8050-4f1a-a7dd-b63f63d452e9"]}},{"pickle":{"id":"0c32093d-1374-43dd-9a92-f957c601040f","uri":"file:///C:/Selenium%20demo/Capstone_project_maven/features/searchProduct.feature","name":"Search valid product in all","language":"en","steps":[{"text":"the user in the Home page","id":"d223bf50-689f-4ea0-a739-4b2b4dc1718b","astNodeIds":["d3249dc5-1a00-48e4-b727-87c8e34402a8","bbfe79a9-2b60-4093-b72a-1609f5a33ea2"]},{"text":"he searches product in category all as \"Web Design in a Nutshell\"","id":"5f09264f-2f8b-488e-85c8-4fe45ccf183a","astNodeIds":["facb4b0b-0e69-4ebb-abb6-4588e025c61a","bbfe79a9-2b60-4093-b72a-1609f5a33ea2"]},{"text":"he should be able to view the product \"Web Design in a Nutshell\"","id":"d0b781c8-6485-4f59-8a99-d8247018bac6","astNodeIds":["01ec27b8-734c-47dd-83a8-95a9feacba36","bbfe79a9-2b60-4093-b72a-1609f5a33ea2"]}],"tags":[{"name":"@searchproduct","astNodeId":"6d077e9a-fc17-43a3-93fb-65e8bfe6d67a"}],"astNodeIds":["c99656b2-37f6-4dee-a57d-c521d0821b6c","bbfe79a9-2b60-4093-b72a-1609f5a33ea2"]}},{"pickle":{"id":"c7e4f6bf-62a4-4140-8a12-ef1ae71b7c51","uri":"file:///C:/Selenium%20demo/Capstone_project_maven/features/searchProduct.feature","name":"Search in valid product in all","language":"en","steps":[{"text":"the user in the Home page","id":"f85babc5-87a3-4807-ab5d-be7c2fe6cca3","astNodeIds":["072d9a57-6914-4284-ae5e-16436685430e","e02433d7-53c5-452e-aa4d-075f99c7d5c3"]},{"text":"he searches invalid product in category all as \"wkefbiwejbfiw\"","id":"2b083e0d-b1e3-4bbb-a120-90d9346ea170","astNodeIds":["af79ed5c-58d0-4491-a41c-0b90f9d8b2ab","e02433d7-53c5-452e-aa4d-075f99c7d5c3"]},{"text":"he should be able to view no record found","id":"59fa38b4-38c8-48a3-ace2-131ce88f121f","astNodeIds":["8e537d87-5ad3-46ac-96d3-3a27d23e0242","e02433d7-53c5-452e-aa4d-075f99c7d5c3"]}],"tags":[{"name":"@searchproduct","astNodeId":"6d077e9a-fc17-43a3-93fb-65e8bfe6d67a"}],"astNodeIds":["624ab915-570a-45eb-9905-124ed525529f","e02433d7-53c5-452e-aa4d-075f99c7d5c3"]}},{"hook":{"id":"e9522648-95c1-483a-997d-4480e549f03b"}},{"stepDefinition":{"id":"66a0fdf4-c5e5-42c3-8bdc-d9105d5a5f64","pattern":{"source":"he searches invalid product in category all as {string}"}}},{"stepDefinition":{"id":"8d661060-6f31-441c-ae82-6e8294f02bd6","pattern":{"source":"he should be able to view no record found"}}},{"stepDefinition":{"id":"8c6042f0-b558-448a-8a37-8dce00d9a707","pattern":{"source":"the user in the Home page"}}},{"stepDefinition":{"id":"f4322ae3-0f1a-4585-bf9b-e172c5983242","pattern":{"source":"he should be able to view the product {string}"}}},{"stepDefinition":{"id":"2c4fef5a-5af7-4241-bbd1-3fe065d6f845","pattern":{"source":"he searches product in category all as {string}"}}},{"stepDefinition":{"id":"62c3193a-d894-4d22-9351-10d61ddef6fc","pattern":{"source":"the new product is added to the product list as {string},{string}"}}},{"stepDefinition":{"id":"18ad350e-e5b5-48c4-be6e-7603e6513e6b","pattern":{"source":"he adds the product in the product list as {string} ,{string} and {string}"}}},{"stepDefinition":{"id":"e5829567-91fb-4200-ae58-d80e4cf4613d","pattern":{"source":"user is in the Admin page, enter login as {string} and password as {string}"}}},{"stepDefinition":{"id":"3c10197f-b149-4beb-befc-689f89b33a15","pattern":{"source":"he adds the duplicate product in the product list as {string} ,{string} and {string}"}}},{"stepDefinition":{"id":"1362fdf0-db3d-46b5-8673-575d1f8af765","pattern":{"source":"the {string} is not added from {string}"}}},{"stepDefinition":{"id":"97185dfb-9841-45d7-ad84-7524bf4b0a86","pattern":{"source":"he should be navigates to admin menu page"}}},{"stepDefinition":{"id":"9eec5571-5df4-4400-a909-3ba89afa4edd","pattern":{"source":"user is in the Admin page"}}},{"stepDefinition":{"id":"d0cc61bc-756e-4dfc-a3c6-02ad350d89de","pattern":{"source":"enter login as {string} and password as {string}"}}},{"stepDefinition":{"id":"c45361d0-ab65-4985-a0e3-1d96e3736e4f","pattern":{"source":"he should not be navigated to admin menu page"}}},{"stepDefinition":{"id":"768ae6b2-760d-4956-a758-12f3c26c882e","pattern":{"source":"enter login as {string} and uppercase password as {string}"}}},{"stepDefinition":{"id":"b205893d-6b6e-4965-b5ec-96028ea45792","pattern":{"source":"enter invalid login as {string} and invalid password as {string}"}}},{"stepDefinition":{"id":"376d2c0b-16a0-4d9e-9a93-b673fb2b2ee0","pattern":{"source":"he should not be navigated to admin menu page after using invalid details"}}},{"stepDefinition":{"id":"ee70d281-2436-49cb-a9ff-45a730350d3c","pattern":{"source":"he deletes the {string},{string}"}}},{"stepDefinition":{"id":"15b5ab69-1436-4a3d-8508-c43ae0fef9be","pattern":{"source":"the product is deleted"}}},{"hook":{"id":"f20d07be-483a-4205-b8d0-08aee53cd416"}},{"testCase":{"id":"dcf369e2-e360-4364-a30d-3a8f9abb91de","pickleId":"c483f300-50d6-44d0-a6d2-8d2fcc0b30f1","testSteps":[{"id":"ed5dc92f-cd2e-4eec-a6aa-406fe1fa48bb","hookId":"ed5dc92f-cd2e-4eec-a6aa-406fe1fa48bb"},{"id":"31363ae0-50fa-4e2c-a79d-a003b396b778","pickleStepId":"0b52b0a0-02da-4a71-8a80-1d9b76ec1c8e","stepDefinitionIds":["31363ae0-50fa-4e2c-a79d-a003b396b778"],"stepMatchArgumentsLists":[{"stepMatchArguments":[{"parameterTypeName":"string","group":{"start":42,"value":"\"admin\"","children":[{"start":43,"value":"admin","children":[{}]},{"children":[{}]}]}},{"parameterTypeName":"string","group":{"start":66,"value":"\"admin\"","children":[{"start":67,"value":"admin","children":[{}]},{"children":[{}]}]}}]}]},{"id":"0b8fd67d-c6d6-4771-aab9-d0cf0ab55de7","pickleStepId":"0ce5a0fc-1e55-4aa7-8eb2-bbcef97e6a7b","stepDefinitionIds":["0b8fd67d-c6d6-4771-aab9-d0cf0ab55de7"],"stepMatchArgumentsLists":[{"stepMatchArguments":[{"parameterTypeName":"string","group":{"start":43,"value":"\"Programming\"","children":[{"start":44,"value":"Programming","children":[{}]},{"children":[{}]}]}},{"parameterTypeName":"string","group":{"start":58,"value":"\"book of java\"","children":[{"start":59,"value":"book of java","children":[{}]},{"children":[{}]}]}},{"parameterTypeName":"string","group":{"start":77,"value":"\"30\"","children":[{"start":78,"value":"30","children":[{}]},{"children":[{}]}]}}]}]},{"id":"d5d1df09-fdf1-47fc-87bc-f0945775c194","pickleStepId":"ff69210f-72b0-45fa-92f4-5fcf2b010c22","stepDefinitionIds":["d5d1df09-fdf1-47fc-87bc-f0945775c194"],"stepMatchArgumentsLists":[{"stepMatchArguments":[{"parameterTypeName":"string","group":{"start":48,"value":"\"book of java\"","children":[{"start":49,"value":"book of java","children":[{}]},{"children":[{}]}]}},{"parameterTypeName":"string","group":{"start":63,"value":"\"Programming\"","children":[{"start":64,"value":"Programming","children":[{}]},{"children":[{}]}]}}]}]},{"id":"746c2373-a39f-413d-9f17-23637351afdd","hookId":"746c2373-a39f-413d-9f17-23637351afdd"}]}},{"testCaseStarted":{"timestamp":{"seconds":"1764417548","nanos":347382700},"testCaseId":"dcf369e2-e360-4364-a30d-3a8f9abb91de","id":"e0f8adea-9e36-40c9-b242-796252ff5c86"}},{"testStepStarted":{"timestamp":{"seconds":"1764417548","nanos":397382200},"testStepId":"ed5dc92f-cd2e-4eec-a6aa-406fe1fa48bb","testCaseStartedId":"e0f8adea-9e36-40c9-b242-796252ff5c86"}},{"testStepFinished":{"testStepResult":{"status":"PASSED","duration":{"seconds":"3","nanos":781493600}},"timestamp":{"seconds":"1764417552","nanos":178875800},"testStepId":"ed5dc92f-cd2e-4eec-a6aa-406fe1fa48bb","testCaseStartedId":"e0f8adea-9e36-40c9-b242-796252ff5c86"}},{"testStepStarted":{"timestamp":{"seconds":"1764417552","nanos":197872500},"testStepId":"31363ae0-50fa-4e2c-a79d-a003b396b778","testCaseStartedId":"e0f8adea-9e36-40c9-b242-796252ff5c86"}},{"testStepFinished":{"testStepResult":{"status":"PASSED","duration":{"seconds":"1","nanos":301291500}},"timestamp":{"seconds":"1764417553","nanos":499164000},"testStepId":"31363ae0-50fa-4e2c-a79d-a003b396b778","testCaseStartedId":"e0f8adea-9e36-40c9-b242-796252ff5c86"}},{"testStepStarted":{"timestamp":{"seconds":"1764417553","nanos":502162600},"testStepId":"0b8fd67d-c6d6-4771-aab9-d0cf0ab55de7","testCaseStartedId":"e0f8adea-9e36-40c9-b242-796252ff5c86"}},{"testStepFinished":{"testStepResult":{"status":"FAILED","message":"org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.linkText: Products\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexcepti
